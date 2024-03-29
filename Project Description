@@ -1,3 +1,652 @@
-The stock market is known for being volatile, dynamic, and nonlinear. Accurate stock price prediction is extremely challenging because of multiple (macro and micro) factors, such as politics, global economic conditions, unexpected events, a company’s financial performance, and so on. 
-But, all of this also means that there’s a lot of data to find patterns in. So, financial analysts, researchers, and data scientists keep exploring analytics techniques to detect stock market trends. This gave rise to the concept of algorithmic trading, which uses automated, pre-programmed trading strategies to execute orders.
-This documentation presents a time series analysis project implemented in a Google Colab notebook. The project explores the analysis of a time series dataset using Python libraries such as Pandas, Matplotlib, and Statsmodels. The dataset used in this project represents daily stock prices of a company and aims to demonstrate various aspects of time series analysis, including data visualization, stationarity testing, and forecasting.
+               CHAPTER-1
+INTRODUCTION
+Time Series Data Analysis
+Time series analysis is a statistical technique used to analyze data that varies over time. This technique is commonly used in fields such as finance, economics, engineering, and environmental science to study trends, patterns, and relationships in time-varying data.
+The stock market is an example of a time series, and it is known for being volatile, dynamic, and nonlinear. Accurate study of time series data is extremely challenging because of multiple (macro and micro) factors, like variations, trends either seasonal or non-seasonal traits. 
+But all of this also means that there’s a lot of data to find patterns in. So, financial analysts, researchers, and data scientists keep exploring analytics techniques to detect stock market trends. This gave rise to the concept of algorithmic trading, which uses automated, pre-programmed trading strategies to execute orders.
+Time Series is a unique field. It is a Science in itself. Experts quote ‘A good forecast is a blessing while a wrong forecast can prove to be dangerous.
+A time series data is the data on a response variable Y(t) observed at different points in time t. Data on the variable is collected at regular intervals and in a chronological order. Anything that is observed sequentially over time is time series.
+For e.g. data collected on the sale of smartphones over several time intervals, the GDP of a nation each year.
+
+ 
+                CHAPTER-2
+
+EXISTING SYSTEM
+Stock market prediction is the act of trying to determine the future value of a company stock or other financial instrument traded on an exchange. The successful prediction of a stock's future price could yield significant profit. 
+The efficient-market hypothesis suggests that stock prices reflect all currently available information and any price changes that are not based on newly revealed information thus are inherently unpredictable. 
+Others disagree and those with this viewpoint possess myriad methods and technologies which purportedly allow them to gain future price information.
+Prediction methodologies fall into three broad categories which can (and often do) overlap. They are fundamental analysis, technical analysis (charting) and technological methods.
+
+
+ 
+                CHAPTER-3
+
+PROBLEM FORMULATION
+Stock market prediction is a complex task as it involves multiple factors such as economic indicators, market trends, political changes, company performance, and more. It is difficult to accurately predict how all these factors will interact with each other and impact stock prices.
+Humans cannot keep in mind all the factors involved in stock price prediction and predict the behavior of the market. This is where we need software or a model.
+Time series analysis helps organizations understand the underlying causes of trends or systemic patterns over time. Stock market analysis is an excellent example of time series analysis in action, especially with automated trading algorithms. 
+When organizations analyze data over consistent intervals, they can also use time series forecasting to predict the likelihood of future events. Time series forecasting is part of predictive analytics.
+
+
+
+ 
+     CHAPTER-4
+
+SYSTEM ANALYSIS & DESIGN
+Predictive analytics determines the likelihood of future outcomes using techniques like data mining, statistics, data modeling, artificial intelligence, and machine learning. Put simply, predictive analytics interprets an organization’s historical data to make predictions about the future. Today’s predictive analytics techniques can discover patterns in the data to identify upcoming risks and opportunities for an organization.
+Potential applications for predictive analytics vary widely, as do the types of models used to power resulting insights. Determining what types of predictive analytics techniques are best for your organization starts with a clearly defined objective.
+Predictive analytics models can be roughly grouped into these four types:
+	Regression Models
+	Classification Models
+	Clustering Models
+	Time series Models
+
+
+ 
+                CHAPTER-5
+
+IMPLEMENTATION
+❖ Dataset Collection
+❖ Dataset Uploading
+❖ Examine and prepare dataset for modelling
+❖ Visualization of dataset
+❖ Decompose
+A. Decompose data into 4 different components
+i.	Observed
+ii.	 Trended
+iii.	 Seasonal
+iv.	Residual
+ 
+B. Check for Stationarity
+Using the model ADF (Augmented Dickey Fuller) Tester. ADF approach is essential as a statical significance test. It compares the p value with critical and does hypothesis testing and this test helps in determining whether the processed data is close to stationary or not with different levels of confidence.
+
+C. Make data Stationary
+BY adding the factors detrending, differencing, randomization and the combination of seasonal and trending factors.
+
+D. Create Training and Testing Dataset
+GRAPHS:
+ 
+ADANIPORT’S LAST 150 DATES DATA
+
+ 
+TESLA’S LAST 150 DATES DATA
+
+
+
+
+
+
+
+
+INTRODUCTION
+Time Series Data Analysis
+Time series analysis is a statistical technique used to analyze data that varies over time. This technique is commonly used in fields such as finance, economics, engineering, and environmental science to study trends, patterns, and relationships in time-varying data.
+The stock market is an example of a time series, and it is known for being volatile, dynamic, and nonlinear. Accurate study of time series data is extremely challenging because of multiple (macro and micro) factors, like variations, trends either seasonal or non-seasonal traits. 
+But all of this also means that there’s a lot of data to find patterns in. So, financial analysts, researchers, and data scientists keep exploring analytics techniques to detect stock market trends. This gave rise to the concept of algorithmic trading, which uses automated, pre-programmed trading strategies to execute orders.
+Time Series is a unique field. It is a Science in itself. Experts quote ‘A good forecast is a blessing while a wrong forecast can prove to be dangerous.
+A time series data is the data on a response variable Y(t) observed at different points in time t. Data on the variable is collected at regular intervals and in a chronological order. Anything that is observed sequentially over time is time series.
+For e.g. data collected on the sale of smartphones over several time intervals, the GDP of a nation each year.
+
+ 
+                CHAPTER-2
+
+EXISTING SYSTEM
+Stock market prediction is the act of trying to determine the future value of a company stock or other financial instrument traded on an exchange. The successful prediction of a stock's future price could yield significant profit. 
+The efficient-market hypothesis suggests that stock prices reflect all currently available information and any price changes that are not based on newly revealed information thus are inherently unpredictable. 
+Others disagree and those with this viewpoint possess myriad methods and technologies which purportedly allow them to gain future price information.
+Prediction methodologies fall into three broad categories which can (and often do) overlap. They are fundamental analysis, technical analysis (charting) and technological methods.
+
+
+ 
+                CHAPTER-3
+
+PROBLEM FORMULATION
+Stock market prediction is a complex task as it involves multiple factors such as economic indicators, market trends, political changes, company performance, and more. It is difficult to accurately predict how all these factors will interact with each other and impact stock prices.
+Humans cannot keep in mind all the factors involved in stock price prediction and predict the behavior of the market. This is where we need software or a model.
+Time series analysis helps organizations understand the underlying causes of trends or systemic patterns over time. Stock market analysis is an excellent example of time series analysis in action, especially with automated trading algorithms. 
+When organizations analyze data over consistent intervals, they can also use time series forecasting to predict the likelihood of future events. Time series forecasting is part of predictive analytics.
+
+
+
+ 
+     CHAPTER-4
+
+SYSTEM ANALYSIS & DESIGN
+Predictive analytics determines the likelihood of future outcomes using techniques like data mining, statistics, data modeling, artificial intelligence, and machine learning. Put simply, predictive analytics interprets an organization’s historical data to make predictions about the future. Today’s predictive analytics techniques can discover patterns in the data to identify upcoming risks and opportunities for an organization.
+Potential applications for predictive analytics vary widely, as do the types of models used to power resulting insights. Determining what types of predictive analytics techniques are best for your organization starts with a clearly defined objective.
+Predictive analytics models can be roughly grouped into these four types:
+	Regression Models
+	Classification Models
+	Clustering Models
+	Time series Models
+
+
+ 
+                CHAPTER-5
+
+IMPLEMENTATION
+❖ Dataset Collection
+❖ Dataset Uploading
+❖ Examine and prepare dataset for modelling
+❖ Visualization of dataset
+❖ Decompose
+A. Decompose data into 4 different components
+i.	Observed
+ii.	 Trended
+iii.	 Seasonal
+iv.	Residual
+ 
+B. Check for Stationarity
+Using the model ADF (Augmented Dickey Fuller) Tester. ADF approach is essential as a statical significance test. It compares the p value with critical and does hypothesis testing and this test helps in determining whether the processed data is close to stationary or not with different levels of confidence.
+
+C. Make data Stationary
+BY adding the factors detrending, differencing, randomization and the combination of seasonal and trending factors.
+
+D. Create Training and Testing Dataset
+GRAPHS:
+ 
+ADANIPORT’S LAST 150 DATES DATA
+
+ 
+TESLA’S LAST 150 DATES DATA
+
+
+
+
+
+
+
+
+
+
+                           
+   DE-TRENDED
+
+ 
+STATIONARY
+
+ 
+DIFFERENCED AND DE-TRENDED
+
+
+
+
+
+ 
+import numpy as np # linear algebra
+import pandas as pd
+
+import pandas as pd
+import numpy as np
+import datetime as dt
+import os
+import warnings
+from collections import UserDict
+from glob import glob
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from IPython.display import Image
+%matplotlib inline
+import matplotlib.dates as mpl_dates
+import seaborn as sns
+from statsmodels.tsa.ar_model import AutoReg, ar_select_order
+from statsmodels.tsa.api import acf, pacf, graphics
+from statsmodels.tsa.statespace.sarimax import SARIMAX
+from sklearn.preprocessing import MinMaxScaler
+import math
+from keras.models import Model, Sequential
+from keras.layers import GRU, Dense
+from keras.callbacks import EarlyStopping
+
+import plotly.graph_objects as go
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+ADANIPORTS = pd.read_csv ('/content/drive/MyDrive/MINI Project/ADANIPORTS.csv')
+ADANIPORTS.head (10000)
+
+
+
+
+TSLA= pd.read_csv ('/content/drive/MyDrive/MINI Project/TSLA.csv')
+TSLA.head (10000)
+
+
+
+df=pd.read_csv('ADANIPORTS.csv')[-200:]
+df
+df.set_index(pd.DatetimeIndex(df['Date'].values))
+
+fig = go.Figure(data=[go.Candlestick(x=df['Date'],open=df['Open'],high=df['High'],low=df['Low'],close=df['Close'])])
+fig.show()
+
+
+ 
+
+
+
+
+df=pd.read_csv('TSLA.csv')[-200:]
+df
+df.set_index(pd.DatetimeIndex(df['Date'].values))
+
+fig = go.Figure(data=[go.Candlestick(x=df['Date'],open=df['Open'],high=df['High'],low=df['Low'],close=df['Close'])])
+fig.show()
+
+
+
+ 
+
+import statsmodels.api as sm
+def seasonal_decompose (y):
+    decomposition = sm.tsa.seasonal_decompose(y, model='additive',extrapolate_trend='freq')
+    fig = decomposition.plot()
+    fig.set_size_inches(14,7)
+    plt.show()
+    seasonal_decompose(y)
+
+def test_stationarity(timeseries, title):
+    
+    #Determing rolling statistics
+    rolmean = pd.Series(timeseries).rolling(window=12).mean() 
+    rolstd = pd.Series(timeseries).rolling(window=12).std()
+    
+    fig, ax = plt.subplots(figsize=(16, 4))
+    ax.plot(timeseries, label= title)
+    ax.plot(rolmean, label='rolling mean');
+    ax.plot(rolstd, label='rolling std (x10)');
+    ax.legend()
+
+
+pd.options.display.float_format = '{:.8f}'.format
+test_stationarity(y,'raw data')
+
+
+
+
+from statsmodels.tsa.stattools import adfuller
+
+def ADF_test(timeseries, dataDesc):
+    print(' > Is the {} stationary ?'.format(dataDesc))
+    dftest = adfuller(timeseries.dropna(), autolag='AIC')
+    print('Test statistic = {:.3f}'.format(dftest[0]))
+    print('P-value = {:.3f}'.format(dftest[1]))
+    print('Critical values :')
+    for k, v in dftest[4].items():
+        print('\t{}: {} - The data is {} stationary with {}% confidence'.format(k, v, 'not' if v<dftest[0] else '', 100-int(k[:-1])))
+
+
+
+ADF_test(y,'raw data')
+Is the raw data stationary ?
+Test statistic = 1.400
+P-value = 0.997
+Critical values :
+	1%: -3.4330810457844425 - The data is not stationary with 99% confidence
+	5%: -2.862746538733181 - The data is not stationary with 95% confidence
+	10%: -2.567412291147901 - The data is not stationary with 90% confidence
+
+
+
+y_detrend =  (y - y.rolling(window=12).mean())/y.rolling(window=12).std()
+
+test_stationarity(y_detrend,'de-trended data')
+ADF_test(y_detrend,'de-trended data')
+Is the de-trended data stationary ?
+Test statistic = -16.415
+P-value = 0.000
+Critical values :
+	1%: -3.4330742193886445 - The data is  stationary with 99% confidence
+	5%: -2.8627435243022283 - The data is  stationary with 95% confidence
+	10%: -2.567410686207021 - The data is  stationary with 90% confidence
+
+
+
+
+
+
+
+
+ 
+
+y_12lag =  y - y.shift(12)
+
+test_stationarity(y_12lag,'12 lag differenced data')
+ADF_test(y_12lag,'12 lag differenced data')
+Is the 12 lag differenced data stationary ?
+Test statistic = -1.729
+P-value = 0.416
+Critical values :
+	1%: -3.433105209968547 - The data is not stationary with 99% confidence
+	5%: -2.8627572092083597 - The data is not stationary with 95% confidence
+	10%: -2.5674179723228354 - The data is not stationary with 90% confidence
+
+
+
+
+
+
+
+           
+
+
+
+            CHAPTER-6
+
+RESULT & DISCUSSION
+RESULT:
+The stock price predictor using the time series model is now able to forecast the upcoming trends of any stock you give as input to add it as data frame.
+The critical values observed are to settle down at their best value to give accurate predictions.
+Different graphs showing the rolling mean, differenced mean, detrended pattern are now used as keys for forecasting.
+ADF (Augmented dickey’s fuller Test) compiling our input data set’s stationarity and reporting the critical values.
+
+DISCUSSION:
+The model prepared is capable of predicting the future trends of a given stock using past record of changes in attributes of stock based on different factors as it is trained by sufficient test cases and tested with sufficient samples to predict the future trends of stock. 
+As the model is trained by linear progression method and uses LSTM memory The code is written using OpenCV and MAT-LAB. It runs on google Collab in which the folders are uploaded from the google drive.
+
+ 
+           CHAPTER-7
+
+CONCLUSION, LIMITATION & FUTURE SCOPE
+CONCLUSION: 
+By now we have taken the following steps in the process of reaching a perfect model which is capable of forecasting using time series analytics.
+	Data set uploading.
+	Examine and Prepare dataset
+	Visualization of dataset.
+Decompose into four pillars observed, Trended, Seasonal and Residual factor depending on graphs individually.
+	Check for stationarity.
+	Make data stationary
+	Differenced and Detrended graphs.
+
+
+
+
+
+
+
+
+
+LIMITATIONS: 
+I.	Complexity: Stock market prediction is a complex task as it involves multiple factors such as economic indicators, market trends, political changes, company performance, and more. It is difficult to accurately predict how all these factors will interact with each other and impact stock prices. 
+II.	Volatility: The stock market is highly volatile, and stock prices can fluctuate rapidly due to a wide range of factors, such as news events, rumors, and unexpected announcements. Predicting stock prices accurately in such a volatile market is challenging. 
+III.	Data quality: Stock market prediction relies on data from various sources such as financial statements, news articles, and market reports. However, the quality and reliability of these data sources can vary, leading to inaccuracies in predictions.
+IV.	Time dependency: Stock market predictions are time-dependent as they are based on historical data and trends. However, past performance is not always a reliable indicator of future performance, and market conditions can change quickly, making it difficult to accurately predict future stock prices.
+V.	Noise: The stock market is subject to a lot of noise, which can be caused by various factors, such as market manipulation, insider trading, and rumors. This noise can obscure genuine market signals, making it challenging to accurately predict stock prices.
+VI.	Black swan events: The stock market is susceptible to unexpected and rare events, also known as black swan events, that can have a significant impact on stock prices. Predicting the occurrence and impact of such events is difficult, making accurate stock market prediction even more challenging.
+
+
+
+
+
+FUTURE SCOPE: 
+
+The future scope of stock market prediction systems is quite significant. As technology continues to evolve, and data analytics tools become more advanced, the accuracy and efficiency of these systems will continue to improve. 
+Here are a few potential future developments in the field: Overall, the future scope of stock market prediction systems is promising, and as these systems continue to evolve and improve, investors can expect more accurate and reliable predictions, leading to better investment decisions.
+
+
+ 
+REFRENCES:
+	Tableau
+             https://www.tableau.com/learn/articles/time-series-analysis 
+	 Indian Infoline 
+            https://www.indiainfoline.com/ 
+	Finance
+            https://finance.yahoo.com/ 
+	Business Standard 
+           https://www.business-standard.com/
+	Economic Times
+          https://m.economictimes.com/markets/stocks
+	 Money Control 
+           https://www.moneycontrol.com/stocksmarketsindia/
+
+
+
+
+
+
+                           
+   DE-TRENDED
+
+ 
+STATIONARY
+
+ 
+DIFFERENCED AND DE-TRENDED
+
+
+
+
+
+ 
+import numpy as np # linear algebra
+import pandas as pd
+
+import pandas as pd
+import numpy as np
+import datetime as dt
+import os
+import warnings
+from collections import UserDict
+from glob import glob
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from IPython.display import Image
+%matplotlib inline
+import matplotlib.dates as mpl_dates
+import seaborn as sns
+from statsmodels.tsa.ar_model import AutoReg, ar_select_order
+from statsmodels.tsa.api import acf, pacf, graphics
+from statsmodels.tsa.statespace.sarimax import SARIMAX
+from sklearn.preprocessing import MinMaxScaler
+import math
+from keras.models import Model, Sequential
+from keras.layers import GRU, Dense
+from keras.callbacks import EarlyStopping
+
+import plotly.graph_objects as go
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+ADANIPORTS = pd.read_csv ('/content/drive/MyDrive/MINI Project/ADANIPORTS.csv')
+ADANIPORTS.head (10000)
+
+
+
+
+TSLA= pd.read_csv ('/content/drive/MyDrive/MINI Project/TSLA.csv')
+TSLA.head (10000)
+
+
+
+df=pd.read_csv('ADANIPORTS.csv')[-200:]
+df
+df.set_index(pd.DatetimeIndex(df['Date'].values))
+
+fig = go.Figure(data=[go.Candlestick(x=df['Date'],open=df['Open'],high=df['High'],low=df['Low'],close=df['Close'])])
+fig.show()
+
+
+ 
+
+
+
+
+df=pd.read_csv('TSLA.csv')[-200:]
+df
+df.set_index(pd.DatetimeIndex(df['Date'].values))
+
+fig = go.Figure(data=[go.Candlestick(x=df['Date'],open=df['Open'],high=df['High'],low=df['Low'],close=df['Close'])])
+fig.show()
+
+
+
+ 
+
+import statsmodels.api as sm
+def seasonal_decompose (y):
+    decomposition = sm.tsa.seasonal_decompose(y, model='additive',extrapolate_trend='freq')
+    fig = decomposition.plot()
+    fig.set_size_inches(14,7)
+    plt.show()
+    seasonal_decompose(y)
+
+def test_stationarity(timeseries, title):
+    
+    #Determing rolling statistics
+    rolmean = pd.Series(timeseries).rolling(window=12).mean() 
+    rolstd = pd.Series(timeseries).rolling(window=12).std()
+    
+    fig, ax = plt.subplots(figsize=(16, 4))
+    ax.plot(timeseries, label= title)
+    ax.plot(rolmean, label='rolling mean');
+    ax.plot(rolstd, label='rolling std (x10)');
+    ax.legend()
+
+
+pd.options.display.float_format = '{:.8f}'.format
+test_stationarity(y,'raw data')
+
+
+
+
+from statsmodels.tsa.stattools import adfuller
+
+def ADF_test(timeseries, dataDesc):
+    print(' > Is the {} stationary ?'.format(dataDesc))
+    dftest = adfuller(timeseries.dropna(), autolag='AIC')
+    print('Test statistic = {:.3f}'.format(dftest[0]))
+    print('P-value = {:.3f}'.format(dftest[1]))
+    print('Critical values :')
+    for k, v in dftest[4].items():
+        print('\t{}: {} - The data is {} stationary with {}% confidence'.format(k, v, 'not' if v<dftest[0] else '', 100-int(k[:-1])))
+
+
+
+ADF_test(y,'raw data')
+Is the raw data stationary ?
+Test statistic = 1.400
+P-value = 0.997
+Critical values :
+	1%: -3.4330810457844425 - The data is not stationary with 99% confidence
+	5%: -2.862746538733181 - The data is not stationary with 95% confidence
+	10%: -2.567412291147901 - The data is not stationary with 90% confidence
+
+
+
+y_detrend =  (y - y.rolling(window=12).mean())/y.rolling(window=12).std()
+
+test_stationarity(y_detrend,'de-trended data')
+ADF_test(y_detrend,'de-trended data')
+Is the de-trended data stationary ?
+Test statistic = -16.415
+P-value = 0.000
+Critical values :
+	1%: -3.4330742193886445 - The data is  stationary with 99% confidence
+	5%: -2.8627435243022283 - The data is  stationary with 95% confidence
+	10%: -2.567410686207021 - The data is  stationary with 90% confidence
+
+
+
+
+
+
+
+
+ 
+
+y_12lag =  y - y.shift(12)
+
+test_stationarity(y_12lag,'12 lag differenced data')
+ADF_test(y_12lag,'12 lag differenced data')
+Is the 12 lag differenced data stationary ?
+Test statistic = -1.729
+P-value = 0.416
+Critical values :
+	1%: -3.433105209968547 - The data is not stationary with 99% confidence
+	5%: -2.8627572092083597 - The data is not stationary with 95% confidence
+	10%: -2.5674179723228354 - The data is not stationary with 90% confidence
+
+
+
+
+
+
+
+           
+
+
+
+            CHAPTER-6
+
+RESULT & DISCUSSION
+RESULT:
+The stock price predictor using the time series model is now able to forecast the upcoming trends of any stock you give as input to add it as data frame.
+The critical values observed are to settle down at their best value to give accurate predictions.
+Different graphs showing the rolling mean, differenced mean, detrended pattern are now used as keys for forecasting.
+ADF (Augmented dickey’s fuller Test) compiling our input data set’s stationarity and reporting the critical values.
+
+DISCUSSION:
+The model prepared is capable of predicting the future trends of a given stock using past record of changes in attributes of stock based on different factors as it is trained by sufficient test cases and tested with sufficient samples to predict the future trends of stock. 
+As the model is trained by linear progression method and uses LSTM memory The code is written using OpenCV and MAT-LAB. It runs on google Collab in which the folders are uploaded from the google drive.
+
+ 
+           CHAPTER-7
+
+CONCLUSION, LIMITATION & FUTURE SCOPE
+CONCLUSION: 
+By now we have taken the following steps in the process of reaching a perfect model which is capable of forecasting using time series analytics.
+	Data set uploading.
+	Examine and Prepare dataset
+	Visualization of dataset.
+Decompose into four pillars observed, Trended, Seasonal and Residual factor depending on graphs individually.
+	Check for stationarity.
+	Make data stationary
+	Differenced and Detrended graphs.
+
+
+
+
+
+
+
+
+
+LIMITATIONS: 
+I.	Complexity: Stock market prediction is a complex task as it involves multiple factors such as economic indicators, market trends, political changes, company performance, and more. It is difficult to accurately predict how all these factors will interact with each other and impact stock prices. 
+II.	Volatility: The stock market is highly volatile, and stock prices can fluctuate rapidly due to a wide range of factors, such as news events, rumors, and unexpected announcements. Predicting stock prices accurately in such a volatile market is challenging. 
+III.	Data quality: Stock market prediction relies on data from various sources such as financial statements, news articles, and market reports. However, the quality and reliability of these data sources can vary, leading to inaccuracies in predictions.
+IV.	Time dependency: Stock market predictions are time-dependent as they are based on historical data and trends. However, past performance is not always a reliable indicator of future performance, and market conditions can change quickly, making it difficult to accurately predict future stock prices.
+V.	Noise: The stock market is subject to a lot of noise, which can be caused by various factors, such as market manipulation, insider trading, and rumors. This noise can obscure genuine market signals, making it challenging to accurately predict stock prices.
+VI.	Black swan events: The stock market is susceptible to unexpected and rare events, also known as black swan events, that can have a significant impact on stock prices. Predicting the occurrence and impact of such events is difficult, making accurate stock market prediction even more challenging.
+
+
+
+
+
+FUTURE SCOPE: 
+
+The future scope of stock market prediction systems is quite significant. As technology continues to evolve, and data analytics tools become more advanced, the accuracy and efficiency of these systems will continue to improve. 
+Here are a few potential future developments in the field: Overall, the future scope of stock market prediction systems is promising, and as these systems continue to evolve and improve, investors can expect more accurate and reliable predictions, leading to better investment decisions.
+
+
+ 
+REFRENCES:
+	Tableau
+             https://www.tableau.com/learn/articles/time-series-analysis 
+	 Indian Infoline 
+            https://www.indiainfoline.com/ 
+	Finance
+            https://finance.yahoo.com/ 
+	Business Standard 
+           https://www.business-standard.com/
+	Economic Times
+          https://m.economictimes.com/markets/stocks
+	 Money Control 
+           https://www.moneycontrol.com/stocksmarketsindia/
+
+
+
